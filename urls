@@ -1,0 +1,20 @@
+from django.urls import path,include
+from . import views
+
+urlpatterns = [
+    path('',views.index,name='index'),
+    path('buttons',views.buttons,name='buttons'),
+    path('basic_elements',views.basic_elements,name='basic_elements'),
+    path('basic_table',views.basic_table,name='basic_table'),
+    path('blank-page',views.blank_page,name='blank-page'),
+    path('chartjs',views.chartjs,name='chartjs'),
+    path('documentation',views.documentation,name='documentation'),
+    path('dropdowns',views.dropdowns,name='dropdowns'),
+    path('error-404',views.error_404,name='error-404'),
+    path('error-500',views.error_500,name='error-500'),
+    path('login',views.login,name='login'),
+    path('mdi',views.mdi,name='mdi'),
+    path('register',views.register,name='register'),
+    path('typography',views.typography,name='typography'),
+
+]
